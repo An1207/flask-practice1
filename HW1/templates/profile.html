@@ -1,0 +1,12 @@
+<!-- templates/profile.html -->
+
+<h1>취미</h1>
+<ul>
+    {% for hobby in hobbies %}
+    <li>{{ hobby }}</li>
+    {% endfor %}
+</ul>
+
+<a href="{{ url_for('introduce') }}">이름과 학번</a>
+<a href="{{ url_for('profile') }}">취미</a>
+<a href="{{ url_for('greet', name=student.name) }}">인사</a>
