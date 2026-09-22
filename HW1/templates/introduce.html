@@ -1,0 +1,8 @@
+<!-- templates/introduce.html -->
+
+<h1>이름 : {{ student.name }}</h1>
+<h1>학번: {{ student.student_id }}</h1>
+
+<a href="{{ url_for('introduce') }}">이름과 학번</a>
+<a href="{{ url_for('profile') }}">취미</a>
+<a href="{{ url_for('greet', name=student.name) }}">인사</a>
