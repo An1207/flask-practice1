@@ -19,3 +19,9 @@
 · 취미 목록은 파이썬 리스트로 넘기고, 템플릿에서{% for %} 로 출력할 것
 
 · 세 페이지가 서로 링크로 이어져 있을 것
+
+<img width="636" height="290" alt="image" src="https://github.com/user-attachments/assets/17e1a4e8-98dc-439f-934e-1bb63adaa782" />
+
+<img width="639" height="277" alt="image" src="https://github.com/user-attachments/assets/b6693e50-5b0e-4a70-ac11-4851308369b2" />
+
+<img width="640" height="212" alt="image" src="https://github.com/user-attachments/assets/8314c5ca-c28a-4f64-9c42-21b7b4ab544b" />
