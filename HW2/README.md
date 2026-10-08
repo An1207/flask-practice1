@@ -35,3 +35,11 @@
     ① 할 일 두 개가 있는 목록
     ② 하나를 [완료] 눌러 취소선이 표시된 화면
     ③ 새로고침한 뒤에도 취소선이 남아 있는 화면
+
+ ① <img width="475" height="481" alt="스크린샷 2026-10-08 121707" src="https://github.com/user-attachments/assets/6747fe9e-27d6-4984-9021-8993b978d0d2" />
+
+ ② <img width="485" height="476" alt="스크린샷 2026-10-08 121746" src="https://github.com/user-attachments/assets/01646408-5960-4c01-b562-08d8159cb63c" />
+
+ ③ <img width="486" height="674" alt="스크린샷 2026-10-08 121934" src="https://github.com/user-attachments/assets/c7228400-8f14-410b-bb4c-009896ce7e68" />
+
+
