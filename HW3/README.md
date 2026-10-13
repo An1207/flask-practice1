@@ -38,13 +38,16 @@
 
 ### ① 목록 화면
 
-할 일과 설명 두 개가 데이터베이스에서 조회되고, 완료된 항목에는 취소선이 표시됩니다.
+<img width="434" height="450" alt="스크린샷 2026-10-13 212113" src="https://github.com/user-attachments/assets/edf4ced4-5fbc-4719-9df5-20702ea40286" />
+
 
 ### ② 수정 화면
 
-수정할 할 일과 설명의 현재 값이 입력칸에 표시됩니다.
+<img width="433" height="377" alt="스크린샷 2026-10-13 212156" src="https://github.com/user-attachments/assets/c17808d9-c074-49d9-ba49-3b97177d29b6" />
+
 
 ### ③ 서버를 껐다 켠 뒤에도 그대로인 목록
 
-Flask 서버를 종료하고 다시 실행한 뒤에도 동일한 할 일, 설명, 완료 상태가 유지됩니다.
+<img width="673" height="683" alt="스크린샷 2026-10-13 212340" src="https://github.com/user-attachments/assets/3ac4337c-0b2f-4cd3-9ce9-d375ec1c7bdb" />
+
 
