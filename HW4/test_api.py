@@ -26,10 +26,28 @@ class TodoApiTest(unittest.TestCase):
         r = self.client.post("/api/todos/", json={"text": "우유 사기"})
         self.assertEqual(r.status_code, 201)
         self.assertEqual(r.get_json()["text"], "우유 사기")
+
+    def test_note를_보내면_그대로_오고_생략하면_빈_글자다(self):
+        with_note = self.client.post(
+            "/api/todos/",
+            json={"text": "우유 사기", "note": "2리터짜리로"},
+        )
+        without_note = self.client.post("/api/todos/", json={"text": "책 반납"})
+        self.assertEqual(with_note.get_json()["note"], "2리터짜리로")
+        self.assertEqual(without_note.get_json()["note"], "")
+
+    def test_done_필터는_완료_여부에_맞는_것만_돌려준다(self):
+        self.client.post("/api/todos/", json={"text": "완료", "done": True})
+        self.client.post("/api/todos/", json={"text": "미완료", "done": False})
+        done = self.client.get("/api/todos/?done=true").get_json()
+        pending = self.client.get("/api/todos/?done=false").get_json()
+        self.assertEqual([todo["text"] for todo in done], ["완료"])
+        self.assertEqual([todo["text"] for todo in pending], ["미완료"])
         
     def test_없는_번호는_404_다(self):
         r = self.client.get("/api/todos/999")
         self.assertEqual(r.status_code, 404)
+        self.assertEqual(r.get_json(), {"message": "999 번 할 일이 없습니다"})
         
     def test_patch_는_보낸_칸만_바꾼다(self):
         made = self.client.post("/api/todos/", json={"text": "책 반납"}).get_json()
