@@ -7,9 +7,6 @@
 
 ## 실행방법
 
-HW4의 실행 명세서처럼 환경 준비, 실행 위치, 확인 결과 순서로 정리했습니다.
-분석 저장소와 과제 저장소는 서로 별개입니다.
-
 ```text
 웹기반시스템/
 ├── data_analysis/             # 별도 GitHub 저장소: 작성·실행
@@ -28,34 +25,13 @@ HW4의 실행 명세서처럼 환경 준비, 실행 위치, 확인 결과 순서
         └── README.md
 ```
 
-작성·실행은 `data_analysis` 폴더에서 합니다. 새 환경이면 다음 순서로 준비합니다.
+작성·실행은 `data_analysis` 폴더에서 진행,
 
-```powershell
-cd data_analysis
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-```
+VS Code에서 `hw5.ipynb`를 열고 오른쪽 위 커널을 `data_analysis/.venv`로 선택
+`Restart Kernel` 후 `Run All`을 실행하고 출력과 함께 저장
+`sales_data.csv`는 노트북과 같은 폴더
+실행에 사용한 환경은 Python 3.14.7, pandas 3.1.0
 
-VS Code에서 `hw5.ipynb`를 열고 오른쪽 위 커널을 `data_analysis/.venv`로 선택합니다.
-`Restart Kernel` 후 `Run All`을 실행하고 출력과 함께 저장합니다.
-`sales_data.csv`는 노트북과 같은 폴더에 있어야 합니다.
-실행에 사용한 환경은 Python 3.14.7, pandas 3.1.0입니다.
-
-```powershell
-# 터미널에서 새 커널로 전체 실행하는 방법
-python -m jupyter nbconvert --to notebook --execute --inplace hw5.ipynb
-```
-
-완료 후 파일만 기존 과제 저장소에 복사합니다. README는 HW5 안에 별도로 작성합니다.
-
-```powershell
-# 현재 위치: data_analysis
-Copy-Item hw5.ipynb, sales_data.csv, sales_clean.csv -Destination ..\flask-practice1\HW5\
-```
-
-제출본만 재실행하는 사람은 pandas, matplotlib, seaborn, scipy, jupyter, ipykernel이 설치된 커널을 선택하고
-`flask-practice1/HW5`를 작업 폴더로 사용하면 됩니다. 이 경우에도 원본 CSV가 옆에 있어 독립적으로 실행됩니다.
 `.venv`, `.git`, `.gitignore`, `.ipynb_checkpoints`, 수업 노트북은 HW5에 복사하지 않습니다.
 
 ## 1부 전처리: 한 일과 근거(33쪽 표 모양)
