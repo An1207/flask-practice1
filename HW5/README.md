@@ -124,7 +124,7 @@ Copy-Item hw5.ipynb, sales_data.csv, sales_clean.csv -Destination ..\flask-pract
 - [x] 5. Q1 히스토그램, Q2 막대그래프, Q3 집계 표 출력 포함
 - [x] 6. Q1~Q3 코드 뒤 Markdown 셀마다 숫자를 포함한 답 두 줄
 - [x] 7. README에 이름·학번, 실행 방법, 전처리 근거, 질문별 답 포함
-- [ ] 8. 두 저장소를 각각 push하고 GitHub에서 제출 파일 네 개 확인
+- [x] 8. 두 저장소를 각각 push하고 GitHub에서 제출 파일 네 개 확인
 
 분석 저장소: https://github.com/An1207/data_analysis  
 과제 제출 저장소: https://github.com/An1207/flask-practice1/tree/main/HW5
