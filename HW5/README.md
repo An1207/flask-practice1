@@ -122,7 +122,7 @@ Copy-Item hw5.ipynb, sales_data.csv, sales_clean.csv -Destination ..\flask-pract
 - [x] 3. 단계 ③ 출력 고친 줄 22, 수량 최대 99, 총액 안 맞는 줄 0
 - [x] 4. 단계 ④ 출력 `(1004, 15)`와 `date_error=True` 147건, 정리 CSV 첨부
 - [x] 5. Q1 히스토그램, Q2 막대그래프, Q3 집계 표 출력 포함
-- [x] 6. Q1~Q3 코드 뒤 Markdown 셀마다 숫자를 포함한 답 두 줄
+- [ ] 6. Q1~Q3 코드 뒤 Markdown 답 두 줄은 사용자 요청으로 삭제함. 답은 이 README에 유지
 - [x] 7. README에 이름·학번, 실행 방법, 전처리 근거, 질문별 답 포함
 - [x] 8. 두 저장소를 각각 push하고 GitHub에서 제출 파일 네 개 확인
 
